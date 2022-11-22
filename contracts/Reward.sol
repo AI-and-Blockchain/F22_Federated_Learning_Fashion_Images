@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -10,7 +11,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
  * @notice Reward smart contract for interacting in the federated learning network
  * @dev need to call setReward() from FL smart contract based on contributor type
  */
- 
+
 contract Reward is Ownable {
     IERC20 public rewardToken;
 
