@@ -20,8 +20,8 @@ def provider():
     s_context           = data_provider.to_bytes_context()
     s_public_key        = data_provider.to_bytes_public_key()
     s_relin_key         = data_provider.to_bytes_relin_key()
-    s_rotate_key        = data_provider.to_bytes_rotate_key()
-        
+    s_rotate_key        = data_provider.to_bytes_rotate_key()           
+           
     to_send = {
         'context':  s_context.decode('cp437'),
         'pk':       s_public_key.decode('cp437'),

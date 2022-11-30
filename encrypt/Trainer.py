@@ -15,15 +15,12 @@ trainer.from_bytes_public_key(receive['pk'].encode('cp437'))
 trainer.from_bytes_relin_key(receive['rlk'].encode('cp437'))
 trainer.from_bytes_rotate_key(receive['rtl'].encode('cp437'))
 
+print(trainer)
+
 data = []
 for i in receive['data']:
     data.append(PyCtxt(pyfhel=trainer, bytestring=i.encode('cp437')))
     
 print(data[0])
 
-t = np.array()
-try:
-    t = trainer.decrypt(data[0])
-except Exception as err:
-    print("Type Error", err)
 
