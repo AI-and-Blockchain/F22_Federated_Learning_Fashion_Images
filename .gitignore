@@ -1,1 +1,4 @@
 encrypt/test.csv
+
+*.pyc
+/.vscode
