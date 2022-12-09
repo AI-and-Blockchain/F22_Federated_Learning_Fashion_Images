@@ -28,4 +28,6 @@ for i in range(len(receive['labels'])):
     labels[i] = PyCtxt(pyfhel=trainer, bytestring=receive['labels'][i].encode('cp437'))
 
 print(data.shape, labels.shape)
+print(data[0][0][0])
 
+# Connect to the model
